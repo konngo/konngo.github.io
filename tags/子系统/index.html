@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css">
   
   <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css">
-  <link rel="stylesheet" href="/css/style.css?v=1578554207297">
+  <link rel="stylesheet" href="/css/style.css?v=1578555969696">
 <meta name="generator" content="Hexo 4.2.0"></head>
 
 <body class="mdui-drawer-body-left">
@@ -150,38 +150,7 @@
         </div>
         <article>
             
-            <h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><h4 id="开启windows子系统功能"><a href="#开启windows子系统功能" class="headerlink" title="开启windows子系统功能"></a>开启windows子系统功能</h4><p>在powershell中运行：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux</span><br></pre></td></tr></table></figure>
-<p>或者：控制面板-&gt;程序和功能-&gt;启用或关闭Windows功能-&gt;勾选 适用于Linux的Windows子系统</p>
-<h4 id="下载安装linux子系统"><a href="#下载安装linux子系统" class="headerlink" title="下载安装linux子系统"></a>下载安装linux子系统</h4><p>打开应用商城搜索“WSL”，可根据自己需求选择安装一个或多个Linux系统；</p>
-<p>或者 点击 <a href="https://github.com/yuk7/ArchWSL/releases" target="_blank" rel="noopener">github地址</a> 下载archlinux对应的子系统。下载解压到C盘目录下，使用管理员权限运行Arch.exe，即可开启在windows系统下的archlinux之旅。</p>
-<h3 id="使用wslconfig命令进行管理"><a href="#使用wslconfig命令进行管理" class="headerlink" title="使用wslconfig命令进行管理"></a>使用wslconfig命令进行管理</h3><ol>
-<li>设置默认运行的linux系统：</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wslconfig &#x2F;setdefault &lt;DistributionName&gt;</span><br></pre></td></tr></table></figure>
-
-<p>如wslconfig /setdefault archlinux ，则cmd输入bash运行archlinux</p>
-<ol start="2">
-<li>卸载子系统</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wslconfig &#x2F;unregister &lt;DistributionName&gt;</span><br></pre></td></tr></table></figure>
-
-<p>如：wslconfig /unregeister ubuntu 卸载ubuntu系统。</p>
-<ol start="3">
-<li>查看已安装的linux子系统</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wslconfig &#x2F;list</span><br></pre></td></tr></table></figure>
-
-<ol start="4">
-<li>设置默认用户</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ubuntu config --default-user root</span><br></pre></td></tr></table></figure>
-
-<p>默认使用root用户登录ubuntu系统。</p>
-<blockquote>
-<p> 推荐使用open-wsl作为控制台</p>
-</blockquote>
-
+            linux子系统
             
         </article>
     </div>
@@ -203,7 +172,7 @@
 <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
-<script src="/js/app.js?v=1578554207301"></script>
+<script src="/js/app.js?v=1578555969700"></script>
 <script src="https://cdn.jsdelivr.net/npm/lazysizes@5.1.0/lazysizes.min.js"></script>
 
 

@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css">
   
   <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css">
-  <link rel="stylesheet" href="/css/style.css?v=1578554207261">
+  <link rel="stylesheet" href="/css/style.css?v=1578555969662">
 <meta name="generator" content="Hexo 4.2.0"></head>
 
 <body class="mdui-drawer-body-left">
@@ -150,12 +150,7 @@
         </div>
         <article>
             
-            <h2 id="单元格内指定字段变为红色"><a href="#单元格内指定字段变为红色" class="headerlink" title="单元格内指定字段变为红色"></a>单元格内指定字段变为红色</h2><figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Sub</span> changeColor()</span><br><span class="line">	<span class="keyword">Dim</span> rng <span class="keyword">As</span> Range,istart%,ilen%</span><br><span class="line">	<span class="keyword">With</span> Sheet1.[a1].currentRegion</span><br><span class="line"><span class="keyword">For</span> <span class="keyword">Each</span> rng <span class="keyword">In</span> .Offset(<span class="number">0</span>,<span class="number">0</span>)</span><br><span class="line"><span class="keyword">If</span> Len(rng) <span class="keyword">Then</span></span><br><span class="line">	istart=InStr(rng,<span class="string">"__|"</span>)+<span class="number">3</span></span><br><span class="line">	ilen=InStr(rng,<span class="string">"|nome|"</span>)-istart</span><br><span class="line">	<span class="keyword">If</span> istart&gt;<span class="number">5</span> <span class="keyword">Then</span> </span><br><span class="line">		rng.Characters(istart,ilen).Font.ColorIndex=<span class="number">3</span></span><br><span class="line">	<span class="keyword">End</span> <span class="keyword">If</span></span><br><span class="line"><span class="keyword">End</span> <span class="keyword">If</span></span><br><span class="line"><span class="keyword">Next</span></span><br><span class="line"><span class="keyword">End</span> <span class="keyword">With</span></span><br><span class="line">Application.ScreenUpdating=<span class="literal">true</span></span><br><span class="line"><span class="keyword">Set</span> rng=<span class="literal">Nothing</span></span><br><span class="line"><span class="keyword">End</span> <span class="keyword">Sub</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p> 1.在Sheet1这个表格页面中，遍历a1附近边缘是任意空行和空列组合成的范围。<br> 2.istart :单元格内出现该字段的开始位置；ilen：该字段的长度 （该字段结束位置-开始位置）<br> 3.将该字段的字体颜色ColorIndex设置为3（红色）。</p>
-</blockquote>
-
+            macro脚本
             
         </article>
     </div>
@@ -177,7 +172,7 @@
 <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
-<script src="/js/app.js?v=1578554207264"></script>
+<script src="/js/app.js?v=1578555969665"></script>
 <script src="https://cdn.jsdelivr.net/npm/lazysizes@5.1.0/lazysizes.min.js"></script>
 
 
