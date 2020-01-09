@@ -21,21 +21,22 @@ function failure(){
 #默认执行
 function default(){
 
-  git clone https://${GH_REF} public
-  cd public
+  git clone https://${GH_REF} .deploy_git
+  cd .deploy_git
 
   git checkout master
+  cd ../
 
-  cd ..
+  mv .deploy_git/.git/ ./public/
+  cd ./public
  
 
-  hexo g 
-  gulp
+
 
 cat <<EOF >> README.md
 部署状态 | 集成结果 | 参考值
 ---|---|---
-完成时间 | $time1 | yyyy-mm-dd hh:mm:ss
+完成时间 | $time | yyyy-mm-dd hh:mm:ss
 部署环境 | $TRAVIS_OS_NAME + $TRAVIS_NODE_VERSION | window | linux + stable
 部署类型 | $TRAVIS_EVENT_TYPE | push | pull_request | api | cron
 启用Sudo | $TRAVIS_SUDO | false | true
@@ -46,7 +47,6 @@ Job ID   | $TRAVIS_JOB_ID |
 Job NUM  | $TRAVIS_JOB_NUMBER |
 EOF
 
-  cd public
   git init
   git config user.name "konngo"
   git config user.email "pengljun@qq.com"
