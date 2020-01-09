@@ -6,7 +6,7 @@
 #--------------------------------------------
 
 #定义时间
-time=`date +%Y-%m-%d %H:%M:%S`
+time1=`date +%Y-%m-%d %H:%M:%S`
 
 #执行成功
 function success(){
@@ -25,15 +25,15 @@ function default(){
   cd .deploy_git
 
   git checkout master
-  cd ../
 
-  mv .deploy_git/.git/ ./public/
-  cd ./public
+#  mv .deploy_git/.git/ ./public/
+#  cd ./public
+  mv ../public/* ./ 
 
 cat <<EOF >> README.md
 部署状态 | 集成结果 | 参考值
 ---|---|---
-完成时间 | $time | yyyy-mm-dd hh:mm:ss
+完成时间 | $time1 | yyyy-mm-dd hh:mm:ss
 部署环境 | $TRAVIS_OS_NAME + $TRAVIS_NODE_VERSION | window | linux + stable
 部署类型 | $TRAVIS_EVENT_TYPE | push | pull_request | api | cron
 启用Sudo | $TRAVIS_SUDO | false | true
