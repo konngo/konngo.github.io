@@ -28,7 +28,6 @@ function default(){
 
   mv .deploy_git/.git/ ./public/
   cd ./public
-#  mv ../public/* ./ 
 
 cat <<EOF >> README.md
 部署状态 | 集成结果 | 参考值
@@ -44,7 +43,7 @@ Job ID   | $TRAVIS_JOB_ID |
 Job NUM  | $TRAVIS_JOB_NUMBER |
 EOF
 	
-  git init
+ # git init
   git config user.name "konngo"
   git config user.email "pengljun@qq.com"
   git add .
