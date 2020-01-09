@@ -645,6 +645,18 @@ article h6:before {
   content: '#';
   color: #ff4e6a;
 }
+.code {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  background-color: #282c34;
+}
+.gutter {
+  padding: 0;
+  margin: 0;
+  min-width: 30px;
+  background-color: #282c34;
+}
 article h1 {
   font-size: 2.2em;
 }

@@ -3,7 +3,7 @@
 
 <head>
   
-  <title>今後</title>
+  <title>maven+tomcat 热部署 - 今後</title>
   <meta charset="UTF-8">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -13,11 +13,18 @@
   
 
   <link rel="shortcut icon" href="/favicon.ico" type="image/png" />
-  <meta property="og:type" content="website">
-<meta property="og:title" content="今後">
-<meta property="og:url" content="https://konngo.github.io/page/2/index.html">
+  <meta name="description" content="1.配置tomcat-users.xml1234567&lt;role rolename&#x3D;&quot;tomcat&quot;&#x2F;&gt;&lt;role rolename&#x3D;&quot;manager&quot;&#x2F;&gt;&lt;role rolename&#x3D;&quot;manager-gui&quot;&#x2F;&gt;&lt;role rolename&#x3D;&quot;manager-script&quot; &#x2F;&gt;&lt;role rolename&#x3D;&quot;admin-gui&quot;&#x2F;&gt;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="maven+tomcat 热部署">
+<meta property="og:url" content="https://konngo.github.io/2019/06/11/1560241099787.html/index.html">
 <meta property="og:site_name" content="今後">
+<meta property="og:description" content="1.配置tomcat-users.xml1234567&lt;role rolename&#x3D;&quot;tomcat&quot;&#x2F;&gt;&lt;role rolename&#x3D;&quot;manager&quot;&#x2F;&gt;&lt;role rolename&#x3D;&quot;manager-gui&quot;&#x2F;&gt;&lt;role rolename&#x3D;&quot;manager-script&quot; &#x2F;&gt;&lt;role rolename&#x3D;&quot;admin-gui&quot;&#x2F;&gt;">
+<meta property="article:published_time" content="2019-06-11T08:18:19.000Z">
+<meta property="article:modified_time" content="2019-08-07T06:28:58.000Z">
 <meta property="article:author" content="pengljun">
+<meta property="article:tag" content="maven">
+<meta property="article:tag" content="tomcat">
+<meta property="article:tag" content="热部署">
 <meta name="twitter:card" content="summary">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/css/mdui.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.15.8/styles/atom-one-dark.css">
@@ -28,7 +35,7 @@
     <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css">
   
   <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css">
-  <link rel="stylesheet" href="/css/style.css?v=1578550980442">
+  <link rel="stylesheet" href="/css/style.css?v=1578550980165">
 <meta name="generator" content="Hexo 4.2.0"></head>
 
 <body class="mdui-drawer-body-left">
@@ -128,29 +135,24 @@
   </div>
   <div id="nexmoe-content">
     <div class="nexmoe-primary">
-        <section class="nexmoe-posts" id="brand-waterfall">
+        <div class="nexmoe-post">
+    <div class="nexmoe-post-cover"> 
+        
+            <img src="https://i.loli.net/2019/01/13/5c3aec85a4343.jpg">
+        
+        <h1>maven+tomcat 热部署</h1>
+    </div>
+  <div class="nexmoe-post-meta">
+    <a><i class="nexmoefont icon-calendar-fill"></i>2019年06月11日</a>
+    <a><i class="nexmoefont icon-areachart"></i>571 字</a>
+    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 3 分钟</a>
     
-    <div class="nexmoe-post">
-        <a href="/2019/06/11/1560241099787.html/">
-            <div class="nexmoe-post-cover mdui-ripple"> 
-                
-                    <img src="https://i.loli.net/2019/01/13/5c3aec85a4343.jpg" alt="maven+tomcat 热部署">
-                
-                <h1>maven+tomcat 热部署</h1>
-            </div>
-        </a>
-        <div class="nexmoe-post-meta">
-            <a><i class="nexmoefont icon-calendar-fill"></i>2019年06月11日</a>
-            <a><i class="nexmoefont icon-areachart"></i>571 字</a>
-            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 3 分钟</a>
-            
-            
-                <a class="nexmoefont icon-tag-fill -link" href="/tags/maven/" rel="tag">maven</a> <a class="nexmoefont icon-tag-fill -link" href="/tags/tomcat/" rel="tag">tomcat</a> <a class="nexmoefont icon-tag-fill -link" href="/tags/%E7%83%AD%E9%83%A8%E7%BD%B2/" rel="tag">热部署</a>
-            
-        </div>
-        <article>
-            
-            <h3 id="1-配置tomcat-users-xml"><a href="#1-配置tomcat-users-xml" class="headerlink" title="1.配置tomcat-users.xml"></a>1.配置tomcat-users.xml</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">role</span> <span class="attr">rolename</span>=<span class="string">"tomcat"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">role</span> <span class="attr">rolename</span>=<span class="string">"manager"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">role</span> <span class="attr">rolename</span>=<span class="string">"manager-gui"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">role</span> <span class="attr">rolename</span>=<span class="string">"manager-script"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">role</span> <span class="attr">rolename</span>=<span class="string">"admin-gui"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">user</span> <span class="attr">username</span>=<span class="string">"admin"</span> <span class="attr">password</span>=<span class="string">"admin"</span> <span class="attr">roles</span>=<span class="string">"tomcat,manager,manager-script,admin-gui"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">user</span> <span class="attr">username</span>=<span class="string">"tomcat"</span> <span class="attr">password</span>=<span class="string">"tomcat"</span> <span class="attr">roles</span>=<span class="string">"manager-gui"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+    
+      <a class="nexmoefont icon-tag-fill -link" href="/tags/maven/" rel="tag">maven</a> <a class="nexmoefont icon-tag-fill -link" href="/tags/tomcat/" rel="tag">tomcat</a> <a class="nexmoefont icon-tag-fill -link" href="/tags/%E7%83%AD%E9%83%A8%E7%BD%B2/" rel="tag">热部署</a>
+    
+  </div>
+  <article>
+    <h3 id="1-配置tomcat-users-xml"><a href="#1-配置tomcat-users-xml" class="headerlink" title="1.配置tomcat-users.xml"></a>1.配置tomcat-users.xml</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">role</span> <span class="attr">rolename</span>=<span class="string">"tomcat"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">role</span> <span class="attr">rolename</span>=<span class="string">"manager"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">role</span> <span class="attr">rolename</span>=<span class="string">"manager-gui"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">role</span> <span class="attr">rolename</span>=<span class="string">"manager-script"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">role</span> <span class="attr">rolename</span>=<span class="string">"admin-gui"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">user</span> <span class="attr">username</span>=<span class="string">"admin"</span> <span class="attr">password</span>=<span class="string">"admin"</span> <span class="attr">roles</span>=<span class="string">"tomcat,manager,manager-script,admin-gui"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">user</span> <span class="attr">username</span>=<span class="string">"tomcat"</span> <span class="attr">password</span>=<span class="string">"tomcat"</span> <span class="attr">roles</span>=<span class="string">"manager-gui"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
 <h3 id="2-配置maven-setting-xml"><a href="#2-配置maven-setting-xml" class="headerlink" title="2.配置maven setting.xml"></a>2.配置maven setting.xml</h3><p>在servers节点下添加（username和password与上文一致）：</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">id</span>&gt;</span>tomcat7<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">username</span>&gt;</span>admin<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">password</span>&gt;</span>admin<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
@@ -172,153 +174,37 @@
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">multipart-config</span>&gt;</span></span><br><span class="line">      <span class="comment">&lt;!-- 50MB max --&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">max-file-size</span>&gt;</span>52428800<span class="tag">&lt;/<span class="name">max-file-size</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">max-request-size</span>&gt;</span>52428800<span class="tag">&lt;/<span class="name">max-request-size</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">file-size-threshold</span>&gt;</span>0<span class="tag">&lt;/<span class="name">file-size-threshold</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">multipart-config</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>将这里的52428800修改为：104857600</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">multipart-config</span>&gt;</span></span><br><span class="line">      <span class="comment">&lt;!-- 50MB max --&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">max-file-size</span>&gt;</span>104857600<span class="tag">&lt;/<span class="name">max-file-size</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">max-request-size</span>&gt;</span>104857600<span class="tag">&lt;/<span class="name">max-request-size</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">file-size-threshold</span>&gt;</span>0<span class="tag">&lt;/<span class="name">file-size-threshold</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">multipart-config</span>&gt;</span></span><br></pre></td></tr></table></figure>
-            
-        </article>
-    </div>
-    
-    <div class="nexmoe-post">
-        <a href="/2019/06/11/1560240949046.html/">
-            <div class="nexmoe-post-cover mdui-ripple"> 
-                
-                    <img src="https://i.loli.net/2019/01/13/5c3aec85a4343.jpg" alt="Enterprise Design Thinking ">
-                
-                <h1>Enterprise Design Thinking </h1>
-            </div>
-        </a>
-        <div class="nexmoe-post-meta">
-            <a><i class="nexmoefont icon-calendar-fill"></i>2019年06月11日</a>
-            <a><i class="nexmoefont icon-areachart"></i>587 字</a>
-            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 3 分钟</a>
-            
-            
-                <a class="nexmoefont icon-tag-fill -link" href="/tags/design/" rel="tag">design</a> <a class="nexmoefont icon-tag-fill -link" href="/tags/thinking/" rel="tag">thinking</a>
-            
-        </div>
-        <article>
-            
-            <h2 id="principles-of-ibm-design-thinking"><a href="#principles-of-ibm-design-thinking" class="headerlink" title="principles of ibm design thinking"></a>principles of ibm design thinking</h2><ol>
-<li>A focus on user outcomes</li>
-<li>Restless reinvention</li>
-<li>Diverse empowered teams</li>
-</ol>
-<p><img src="https://img.hacpai.com/file/2019/06/trtrtrt20181210154200142-c090f408.jpg" alt="trtrtrt20181210154200142.jpg"></p>
-<h3 id="focus-on-user-outcomes"><a href="#focus-on-user-outcomes" class="headerlink" title="focus on user outcomes"></a>focus on user outcomes</h3><ol>
-<li>people expect every new experience to be better than the last;</li>
-<li>our products and service are measured on the experience that they deliver;</li>
-</ol>
-<p>==&gt; important to understand what people need and what they expect .</p>
-<blockquote>
-<ol>
-<li>Do you know your user ?</li>
-<li>Do you understand their needs ?</li>
-<li>Can you meet those needs through your work ?</li>
-</ol>
-</blockquote>
-<h3 id="Restless-reinvention"><a href="#Restless-reinvention" class="headerlink" title="Restless reinvention"></a>Restless reinvention</h3><p>active and striving to improve by whatever means are available to us.</p>
-<h3 id="Diverse-empowered-teams"><a href="#Diverse-empowered-teams" class="headerlink" title="Diverse empowered teams"></a>Diverse empowered teams</h3><ol>
-<li>How am i going to build diversity into my teams ?</li>
-<li>How am i going to empower my teams ?</li>
-</ol>
-<h2 id="The-Loop"><a href="#The-Loop" class="headerlink" title="The Loop"></a>The Loop</h2><h3 id="Observe"><a href="#Observe" class="headerlink" title="Observe"></a>Observe</h3><ol>
-<li>Getting to kown your user</li>
-<li>The purpose of Design research (really vaild information)</li>
-</ol>
-<blockquote>
-<p>Make it a habit to challenge your assumptions. Here are some key moments when you should do so:</p>
-<ul>
-<li>During project kickoffs</li>
-<li>After reading a requirements document or scope of work (SOW)</li>
-<li>After reading a request for proposal (RFP) or change request</li>
-</ul>
-</blockquote>
-<blockquote>
-<p>—— Do matters for real people</p>
-</blockquote>
-<p>Check out the <a href="https://www.ibm.com/design/research/" target="_blank" rel="noopener"> IBM Design Research</a> practice to see how you can get your whole team involved in the design research process, regardless of background or role.</p>
-<h3 id="Reflect"><a href="#Reflect" class="headerlink" title="Reflect"></a>Reflect</h3><h4 id="asking-why"><a href="#asking-why" class="headerlink" title="asking why"></a>asking why</h4><blockquote>
-<p>asking why should be the first thing that comes to your mind and the last thing that comes to mind , because if you don’t do that you’re missing all these opportunities to be better that you could have been just with your own skills .</p>
-<p>for example :<br>What problem do your users have today?<br>—– My kids won’t eat the healthy breakfast I make for them, and therefore aren’t getting enough energy to start the day.<br>Why might that be?<br>—– Because they eat sugary cereal at their friend’s house and only want that for breakfast.<br>Why?<br>—– Because it tastes really good and that’s all that matters to them.<br>Why?<br>—– Because they cannot make an informed decision about taste vs. healthy benefits.<br>Why?<br>—– Because they don’t understand the importance of nutrition.</p>
-</blockquote>
-<h4 id="problem-statement"><a href="#problem-statement" class="headerlink" title="problem statement"></a>problem statement</h4><ol>
-<li>observe:Problem statements should always include a user and their current problem, not yours.</li>
-<li>reflect:Problem statements should be flexible and iterative as you learn more about your users and their current state.</li>
-<li>make:Problem statements should be written collaboratively, with all members of a team who have relevant expertise.</li>
-</ol>
-<h5 id="how-to-create-a-greate-problem-statement"><a href="#how-to-create-a-greate-problem-statement" class="headerlink" title="how to create a greate problem statement"></a>how to create a greate problem statement</h5><ol>
-<li>find your user</li>
-<li>whats their problem and how to solve</li>
-<li>why?</li>
-<li>loop</li>
-</ol>
-<blockquote>
-<p>problem statements reframe with the user in mind<br>they are meant to change and be flexible<br>hold off on solutioning </p>
-</blockquote>
-<h5 id="Best-Practices-for-Alignment"><a href="#Best-Practices-for-Alignment" class="headerlink" title="Best Practices for Alignment"></a>Best Practices for Alignment</h5><ol>
-<li>EveryOne has a voice (eg. sharpis and post-it notes , digital tool)</li>
-<li>Keep people on track (visible)</li>
-<li>Get a sense of room (vote)</li>
-<li>document your decisions </li>
-<li>End with a summary</li>
-</ol>
-<p>===&gt; how to start?</p>
-<blockquote>
-<ol>
-<li>start small</li>
-<li>keep it simple</li>
-<li>try something</li>
-</ol>
-</blockquote>
-<h3 id="Make"><a href="#Make" class="headerlink" title="Make"></a>Make</h3><h4 id="big-idea"><a href="#big-idea" class="headerlink" title="big idea"></a>big idea</h4><h5 id="Features-amp-Functions"><a href="#Features-amp-Functions" class="headerlink" title="Features &amp; Functions"></a>Features &amp; Functions</h5><ol>
-<li>predictable solutions</li>
-<li>pigeon holed thinking</li>
-<li>leaving the user behind</li>
-</ol>
-<h5 id="diverge"><a href="#diverge" class="headerlink" title="diverge"></a>diverge</h5><h6 id="Less-talking-more-writing"><a href="#Less-talking-more-writing" class="headerlink" title="Less talking, more writing."></a>Less talking, more writing.</h6><ol>
-<li>Focused conversations: You will spend less time talking in circles, so you can make decisions faster.</li>
-<li>Documentation: You will have evidence to support your decision making, and ideas won’t get lost in the chaos.</li>
-<li>Unique perspectives: Everyone will be able to share their ideas and opinions quickly.</li>
-</ol>
-<h6 id="Less-writing-more-drawing"><a href="#Less-writing-more-drawing" class="headerlink" title="Less writing, more drawing."></a>Less writing, more drawing.</h6><ol>
-<li>Illustrate the experience: Provide an idea of what the experience could look like and, more importantly, feel like for the user.</li>
-<li>Drawing is accessible: Drawing cuts through the barriers that language, various disciplines, and technical expertise create.</li>
-<li>Clear and direct: There is less room for interpretation with drawing, allowing conversations to be more focused.</li>
-</ol>
-
-            
-        </article>
-    </div>
-    
-    <div class="nexmoe-post">
-        <a href="/2019/06/11/1560240231478.html/">
-            <div class="nexmoe-post-cover mdui-ripple"> 
-                
-                    <img src="https://i.loli.net/2019/01/13/5c3aec85a4343.jpg" alt="Archlinux出现的问题解决">
-                
-                <h1>Archlinux出现的问题解决</h1>
-            </div>
-        </a>
-        <div class="nexmoe-post-meta">
-            <a><i class="nexmoefont icon-calendar-fill"></i>2019年06月11日</a>
-            <a><i class="nexmoefont icon-areachart"></i>54 字</a>
-            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
-            
-            
-                <a class="nexmoefont icon-tag-fill -link" href="/tags/archlinux/" rel="tag">archlinux</a> <a class="nexmoefont icon-tag-fill -link" href="/tags/linux/" rel="tag">linux</a>
-            
-        </div>
-        <article>
-            
-            <h1 id="pacman更新时报错-signature-is-invalid"><a href="#pacman更新时报错-signature-is-invalid" class="headerlink" title="pacman更新时报错 signature is invalid"></a>pacman更新时报错 signature is invalid</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">rm -R  &#x2F;etc&#x2F;pacman.d&#x2F;gnupg&#x2F;      # 删除gnupg目录及其文件</span><br><span class="line"> pacman-key --init</span><br><span class="line"> pacman-key --populate archlinux</span><br><span class="line"> pacman-key --populate archlinuxcn    # 启用了archlinux中文软件库的还要执行这个</span><br></pre></td></tr></table></figure>
-            
-        </article>
-    </div>
-    
-</section>
-
-    <nav class="nexmoe-page-nav">
-      <a class="extend prev" rel="prev" href="/">&lt;i class&#x3D;&quot;nexmoefont icon-left&quot;&gt;&lt;&#x2F;i&gt;</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
-    </nav>
+  </article>
   
+    
+<div class="nexmoe-post-copyright">
+<i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
+<strong>Author：</strong>pengljun<br>
+<strong>Link：</strong><a href="https://konngo.github.io/2019/06/11/1560241099787.html/" title="https:&#x2F;&#x2F;konngo.github.io&#x2F;2019&#x2F;06&#x2F;11&#x2F;1560241099787.html&#x2F;" target="_blank" rel="noopener">https:&#x2F;&#x2F;konngo.github.io&#x2F;2019&#x2F;06&#x2F;11&#x2F;1560241099787.html&#x2F;</a><br>
+
+  <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+
+</div>
+
+
+  
+  <section class="nexmoe-comment">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.css">
+<div id="gitalk"></div>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: 'd2ce1c30677542c81c7c',
+        clientSecret: 'c9e67e3f3ecaa8ed3cfce3bb9ed7615b3f53bfd7',
+        id: window.location.pathname,
+        repo: 'konngo.github.io',
+        owner: 'konngo',
+        admin: 'konngo'
+    })
+    gitalk.render('gitalk')
+</script>
+</section>
+</div>
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/js/mdui.min.js"></script>
@@ -334,7 +220,7 @@
 <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
-<script src="/js/app.js?v=1578550980476"></script>
+<script src="/js/app.js?v=1578550980193"></script>
 <script src="https://cdn.jsdelivr.net/npm/lazysizes@5.1.0/lazysizes.min.js"></script>
 
 
