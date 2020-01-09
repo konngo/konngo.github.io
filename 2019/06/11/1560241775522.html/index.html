@@ -3,7 +3,7 @@
 
 <head>
   
-  <title>windows系统linux子系统的安装卸载 - 今後</title>
+  <title>VB语言操作Excel - 今後</title>
   <meta charset="UTF-8">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -11,16 +11,17 @@
   
 
   <link rel="shortcut icon" href="/favicon.ico" type="image/png" />
-  <meta name="description" content="安装开启windows子系统功能在powershell中运行： 1Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux 或者：控制面板-&gt;程序和功能-&gt;启用或关闭Windows功能-&gt;勾选 适用于Linux的Windows子系统 下载安装linux子系统打开应用商城">
+  <meta name="description" content="单元格内指定字段变为红色12345678910111213141516Sub changeColor()	Dim rng As Range,istart%,ilen%	With Sheet1.[a1].currentRegionFor Each rng In .Offset(0,0)If Len(rng) Then	istart&#x3D;InStr(rng,&quot;__|&quot;)+3	ilen&#x3D;InStr(rng,">
 <meta property="og:type" content="article">
-<meta property="og:title" content="windows系统linux子系统的安装卸载">
-<meta property="og:url" content="https://konngo.github.io/2019/06/11/articles/2019/06/11/1560242153673.html/index.html">
+<meta property="og:title" content="VB语言操作Excel">
+<meta property="og:url" content="https://konngo.github.io/2019/06/11/1560241775522.html/index.html">
 <meta property="og:site_name" content="今後">
-<meta property="og:description" content="安装开启windows子系统功能在powershell中运行： 1Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux 或者：控制面板-&gt;程序和功能-&gt;启用或关闭Windows功能-&gt;勾选 适用于Linux的Windows子系统 下载安装linux子系统打开应用商城">
-<meta property="article:published_time" content="2019-06-11T08:35:53.000Z">
-<meta property="article:modified_time" content="2019-08-07T06:25:44.000Z">
+<meta property="og:description" content="单元格内指定字段变为红色12345678910111213141516Sub changeColor()	Dim rng As Range,istart%,ilen%	With Sheet1.[a1].currentRegionFor Each rng In .Offset(0,0)If Len(rng) Then	istart&#x3D;InStr(rng,&quot;__|&quot;)+3	ilen&#x3D;InStr(rng,">
+<meta property="article:published_time" content="2019-06-11T08:29:35.000Z">
+<meta property="article:modified_time" content="2019-08-07T06:26:17.000Z">
 <meta property="article:author" content="pengljun">
-<meta property="article:tag" content="子系统">
+<meta property="article:tag" content="excel">
+<meta property="article:tag" content="vb">
 <meta name="twitter:card" content="summary">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/css/mdui.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.15.8/styles/atom-one-dark.css">
@@ -29,7 +30,7 @@
   
   
   <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css">
-  <link rel="stylesheet" href="/css/style.css?v=1578544322814">
+  <link rel="stylesheet" href="/css/style.css?v=1578545037027">
 <meta name="generator" content="Hexo 4.2.0"></head>
 
 <body class="mdui-drawer-body-left">
@@ -132,48 +133,22 @@
         
             <img src="https://i.loli.net/2019/01/13/5c3aec85a4343.jpg">
         
-        <h1>windows系统linux子系统的安装卸载</h1>
+        <h1>VB语言操作Excel</h1>
     </div>
   <div class="nexmoe-post-meta">
     <a><i class="nexmoefont icon-calendar-fill"></i>2019年06月11日</a>
-    <a><i class="nexmoefont icon-areachart"></i>240 字</a>
+    <a><i class="nexmoefont icon-areachart"></i>146 字</a>
     <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
     
     
-      <a class="nexmoefont icon-tag-fill -link" href="/tags/%E5%AD%90%E7%B3%BB%E7%BB%9F/" rel="tag">子系统</a>
+      <a class="nexmoefont icon-tag-fill -link" href="/tags/excel/" rel="tag">excel</a> <a class="nexmoefont icon-tag-fill -link" href="/tags/vb/" rel="tag">vb</a>
     
   </div>
   <article>
-    <h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><h4 id="开启windows子系统功能"><a href="#开启windows子系统功能" class="headerlink" title="开启windows子系统功能"></a>开启windows子系统功能</h4><p>在powershell中运行：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux</span><br></pre></td></tr></table></figure>
-<p>或者：控制面板-&gt;程序和功能-&gt;启用或关闭Windows功能-&gt;勾选 适用于Linux的Windows子系统</p>
-<h4 id="下载安装linux子系统"><a href="#下载安装linux子系统" class="headerlink" title="下载安装linux子系统"></a>下载安装linux子系统</h4><p>打开应用商城搜索“WSL”，可根据自己需求选择安装一个或多个Linux系统；</p>
-<p>或者 点击 <a href="https://github.com/yuk7/ArchWSL/releases" target="_blank" rel="noopener">github地址</a> 下载archlinux对应的子系统。下载解压到C盘目录下，使用管理员权限运行Arch.exe，即可开启在windows系统下的archlinux之旅。</p>
-<h3 id="使用wslconfig命令进行管理"><a href="#使用wslconfig命令进行管理" class="headerlink" title="使用wslconfig命令进行管理"></a>使用wslconfig命令进行管理</h3><ol>
-<li>设置默认运行的linux系统：</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wslconfig &#x2F;setdefault &lt;DistributionName&gt;</span><br></pre></td></tr></table></figure>
+    <h2 id="单元格内指定字段变为红色"><a href="#单元格内指定字段变为红色" class="headerlink" title="单元格内指定字段变为红色"></a>单元格内指定字段变为红色</h2><figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Sub</span> changeColor()</span><br><span class="line">	<span class="keyword">Dim</span> rng <span class="keyword">As</span> Range,istart%,ilen%</span><br><span class="line">	<span class="keyword">With</span> Sheet1.[a1].currentRegion</span><br><span class="line"><span class="keyword">For</span> <span class="keyword">Each</span> rng <span class="keyword">In</span> .Offset(<span class="number">0</span>,<span class="number">0</span>)</span><br><span class="line"><span class="keyword">If</span> Len(rng) <span class="keyword">Then</span></span><br><span class="line">	istart=InStr(rng,<span class="string">"__|"</span>)+<span class="number">3</span></span><br><span class="line">	ilen=InStr(rng,<span class="string">"|nome|"</span>)-istart</span><br><span class="line">	<span class="keyword">If</span> istart&gt;<span class="number">5</span> <span class="keyword">Then</span> </span><br><span class="line">		rng.Characters(istart,ilen).Font.ColorIndex=<span class="number">3</span></span><br><span class="line">	<span class="keyword">End</span> <span class="keyword">If</span></span><br><span class="line"><span class="keyword">End</span> <span class="keyword">If</span></span><br><span class="line"><span class="keyword">Next</span></span><br><span class="line"><span class="keyword">End</span> <span class="keyword">With</span></span><br><span class="line">Application.ScreenUpdating=<span class="literal">true</span></span><br><span class="line"><span class="keyword">Set</span> rng=<span class="literal">Nothing</span></span><br><span class="line"><span class="keyword">End</span> <span class="keyword">Sub</span></span><br></pre></td></tr></table></figure>
 
-<p>如wslconfig /setdefault archlinux ，则cmd输入bash运行archlinux</p>
-<ol start="2">
-<li>卸载子系统</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wslconfig &#x2F;unregister &lt;DistributionName&gt;</span><br></pre></td></tr></table></figure>
-
-<p>如：wslconfig /unregeister ubuntu 卸载ubuntu系统。</p>
-<ol start="3">
-<li>查看已安装的linux子系统</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wslconfig &#x2F;list</span><br></pre></td></tr></table></figure>
-
-<ol start="4">
-<li>设置默认用户</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ubuntu config --default-user root</span><br></pre></td></tr></table></figure>
-
-<p>默认使用root用户登录ubuntu系统。</p>
 <blockquote>
-<p> 推荐使用open-wsl作为控制台</p>
+<p> 1.在Sheet1这个表格页面中，遍历a1附近边缘是任意空行和空列组合成的范围。<br> 2.istart :单元格内出现该字段的开始位置；ilen：该字段的长度 （该字段结束位置-开始位置）<br> 3.将该字段的字体颜色ColorIndex设置为3（红色）。</p>
 </blockquote>
 
   </article>
@@ -182,7 +157,7 @@
 <div class="nexmoe-post-copyright">
 <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
 <strong>Author：</strong>pengljun<br>
-<strong>Link：</strong><a href="https://konngo.github.io/2019/06/11/articles/2019/06/11/1560242153673.html/" title="https:&#x2F;&#x2F;konngo.github.io&#x2F;2019&#x2F;06&#x2F;11&#x2F;articles&#x2F;2019&#x2F;06&#x2F;11&#x2F;1560242153673.html&#x2F;" target="_blank" rel="noopener">https:&#x2F;&#x2F;konngo.github.io&#x2F;2019&#x2F;06&#x2F;11&#x2F;articles&#x2F;2019&#x2F;06&#x2F;11&#x2F;1560242153673.html&#x2F;</a><br>
+<strong>Link：</strong><a href="https://konngo.github.io/2019/06/11/1560241775522.html/" title="https:&#x2F;&#x2F;konngo.github.io&#x2F;2019&#x2F;06&#x2F;11&#x2F;1560241775522.html&#x2F;" target="_blank" rel="noopener">https:&#x2F;&#x2F;konngo.github.io&#x2F;2019&#x2F;06&#x2F;11&#x2F;1560241775522.html&#x2F;</a><br>
 
   <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
 
@@ -222,7 +197,7 @@
 <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
-<script src="/js/app.js?v=1578544322818"></script>
+<script src="/js/app.js?v=1578545037029"></script>
 <script src="https://cdn.jsdelivr.net/npm/lazysizes@5.1.0/lazysizes.min.js"></script>
 
 

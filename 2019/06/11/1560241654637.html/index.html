@@ -3,7 +3,7 @@
 
 <head>
   
-  <title>VB语言操作Excel - 今後</title>
+  <title>Ubuntu 执行 apt update 更新时报错 - 今後</title>
   <meta charset="UTF-8">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -11,17 +11,17 @@
   
 
   <link rel="shortcut icon" href="/favicon.ico" type="image/png" />
-  <meta name="description" content="单元格内指定字段变为红色12345678910111213141516Sub changeColor()	Dim rng As Range,istart%,ilen%	With Sheet1.[a1].currentRegionFor Each rng In .Offset(0,0)If Len(rng) Then	istart&#x3D;InStr(rng,&quot;__|&quot;)+3	ilen&#x3D;InStr(rng,">
+  <meta name="description" content="12Could not get lock &#x2F;var&#x2F;lib&#x2F;dpkg&#x2F;lock - open (11: Resource temporarily unavailable)dpkg was interrupted, you must manually run &#39;sudo dpkg --configure -a&#39; to correct the p">
 <meta property="og:type" content="article">
-<meta property="og:title" content="VB语言操作Excel">
-<meta property="og:url" content="https://konngo.github.io/2019/06/11/articles/2019/06/11/1560241775522.html/index.html">
+<meta property="og:title" content="Ubuntu 执行 apt update 更新时报错">
+<meta property="og:url" content="https://konngo.github.io/2019/06/11/1560241654637.html/index.html">
 <meta property="og:site_name" content="今後">
-<meta property="og:description" content="单元格内指定字段变为红色12345678910111213141516Sub changeColor()	Dim rng As Range,istart%,ilen%	With Sheet1.[a1].currentRegionFor Each rng In .Offset(0,0)If Len(rng) Then	istart&#x3D;InStr(rng,&quot;__|&quot;)+3	ilen&#x3D;InStr(rng,">
-<meta property="article:published_time" content="2019-06-11T08:29:35.000Z">
-<meta property="article:modified_time" content="2019-08-07T06:26:17.000Z">
+<meta property="og:description" content="12Could not get lock &#x2F;var&#x2F;lib&#x2F;dpkg&#x2F;lock - open (11: Resource temporarily unavailable)dpkg was interrupted, you must manually run &#39;sudo dpkg --configure -a&#39; to correct the p">
+<meta property="article:published_time" content="2019-06-11T08:27:34.000Z">
+<meta property="article:modified_time" content="2019-08-07T06:27:00.000Z">
 <meta property="article:author" content="pengljun">
-<meta property="article:tag" content="excel">
-<meta property="article:tag" content="vb">
+<meta property="article:tag" content="linux">
+<meta property="article:tag" content="Ubuntu">
 <meta name="twitter:card" content="summary">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/css/mdui.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.15.8/styles/atom-one-dark.css">
@@ -30,7 +30,7 @@
   
   
   <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css">
-  <link rel="stylesheet" href="/css/style.css?v=1578544322823">
+  <link rel="stylesheet" href="/css/style.css?v=1578545037030">
 <meta name="generator" content="Hexo 4.2.0"></head>
 
 <body class="mdui-drawer-body-left">
@@ -133,23 +133,26 @@
         
             <img src="https://i.loli.net/2019/01/13/5c3aec85a4343.jpg">
         
-        <h1>VB语言操作Excel</h1>
+        <h1>Ubuntu 执行 apt update 更新时报错</h1>
     </div>
   <div class="nexmoe-post-meta">
     <a><i class="nexmoefont icon-calendar-fill"></i>2019年06月11日</a>
-    <a><i class="nexmoefont icon-areachart"></i>146 字</a>
+    <a><i class="nexmoefont icon-areachart"></i>154 字</a>
     <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
     
     
-      <a class="nexmoefont icon-tag-fill -link" href="/tags/excel/" rel="tag">excel</a> <a class="nexmoefont icon-tag-fill -link" href="/tags/vb/" rel="tag">vb</a>
+      <a class="nexmoefont icon-tag-fill -link" href="/tags/Ubuntu/" rel="tag">Ubuntu</a> <a class="nexmoefont icon-tag-fill -link" href="/tags/linux/" rel="tag">linux</a>
     
   </div>
   <article>
-    <h2 id="单元格内指定字段变为红色"><a href="#单元格内指定字段变为红色" class="headerlink" title="单元格内指定字段变为红色"></a>单元格内指定字段变为红色</h2><figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Sub</span> changeColor()</span><br><span class="line">	<span class="keyword">Dim</span> rng <span class="keyword">As</span> Range,istart%,ilen%</span><br><span class="line">	<span class="keyword">With</span> Sheet1.[a1].currentRegion</span><br><span class="line"><span class="keyword">For</span> <span class="keyword">Each</span> rng <span class="keyword">In</span> .Offset(<span class="number">0</span>,<span class="number">0</span>)</span><br><span class="line"><span class="keyword">If</span> Len(rng) <span class="keyword">Then</span></span><br><span class="line">	istart=InStr(rng,<span class="string">"__|"</span>)+<span class="number">3</span></span><br><span class="line">	ilen=InStr(rng,<span class="string">"|nome|"</span>)-istart</span><br><span class="line">	<span class="keyword">If</span> istart&gt;<span class="number">5</span> <span class="keyword">Then</span> </span><br><span class="line">		rng.Characters(istart,ilen).Font.ColorIndex=<span class="number">3</span></span><br><span class="line">	<span class="keyword">End</span> <span class="keyword">If</span></span><br><span class="line"><span class="keyword">End</span> <span class="keyword">If</span></span><br><span class="line"><span class="keyword">Next</span></span><br><span class="line"><span class="keyword">End</span> <span class="keyword">With</span></span><br><span class="line">Application.ScreenUpdating=<span class="literal">true</span></span><br><span class="line"><span class="keyword">Set</span> rng=<span class="literal">Nothing</span></span><br><span class="line"><span class="keyword">End</span> <span class="keyword">Sub</span></span><br></pre></td></tr></table></figure>
+    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Could not get lock &#x2F;var&#x2F;lib&#x2F;dpkg&#x2F;lock - open (11: Resource temporarily unavailable)</span><br><span class="line">dpkg was interrupted, you must manually run &#39;sudo dpkg --configure -a&#39; to correct the problem.</span><br></pre></td></tr></table></figure>
 
-<blockquote>
-<p> 1.在Sheet1这个表格页面中，遍历a1附近边缘是任意空行和空列组合成的范围。<br> 2.istart :单元格内出现该字段的开始位置；ilen：该字段的长度 （该字段结束位置-开始位置）<br> 3.将该字段的字体颜色ColorIndex设置为3（红色）。</p>
-</blockquote>
+<p>显示dpkg被锁住，无法进行apt update 或者apt-get 等操作。</p>
+<p>执行以下操作：</p>
+<p>#删除/var/lib/dpkg/lock文件<br>sudo rm  /var/lib/dpkg/lock</p>
+<p>#按照提示执行sudo dpkg –configure -a 命令时，<br>#依然报如下错误:<br>dpkg: error: parsing file ‘/var/lib/dpkg/updates/0032’ near line 0: newline in field name ‘#padding’</p>
+<p>#查找网上资料，清除apt缓存<br>sudo apt clean<br>#删除/var/lib/dpkg/updates/下所有文件<br>sudo rm /var/lib/dpkg/updates/*</p>
+<p>#再次执行更新程序，一切正常。<br>sudo apt update</p>
 
   </article>
   
@@ -157,7 +160,7 @@
 <div class="nexmoe-post-copyright">
 <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
 <strong>Author：</strong>pengljun<br>
-<strong>Link：</strong><a href="https://konngo.github.io/2019/06/11/articles/2019/06/11/1560241775522.html/" title="https:&#x2F;&#x2F;konngo.github.io&#x2F;2019&#x2F;06&#x2F;11&#x2F;articles&#x2F;2019&#x2F;06&#x2F;11&#x2F;1560241775522.html&#x2F;" target="_blank" rel="noopener">https:&#x2F;&#x2F;konngo.github.io&#x2F;2019&#x2F;06&#x2F;11&#x2F;articles&#x2F;2019&#x2F;06&#x2F;11&#x2F;1560241775522.html&#x2F;</a><br>
+<strong>Link：</strong><a href="https://konngo.github.io/2019/06/11/1560241654637.html/" title="https:&#x2F;&#x2F;konngo.github.io&#x2F;2019&#x2F;06&#x2F;11&#x2F;1560241654637.html&#x2F;" target="_blank" rel="noopener">https:&#x2F;&#x2F;konngo.github.io&#x2F;2019&#x2F;06&#x2F;11&#x2F;1560241654637.html&#x2F;</a><br>
 
   <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
 
@@ -197,7 +200,7 @@
 <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
-<script src="/js/app.js?v=1578544322826"></script>
+<script src="/js/app.js?v=1578545037034"></script>
 <script src="https://cdn.jsdelivr.net/npm/lazysizes@5.1.0/lazysizes.min.js"></script>
 
 
