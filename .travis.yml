@@ -28,13 +28,12 @@ before_script:
   - export TZ='Asia/Shanghai'
 #  - npm install -g gulp
   - chmod +x _travis.sh
-  - git config -–global user.name "pengljun"
+  - git config -–global user.name "konngo"
   - git config –-global user.email "pengljun@qq.com"
 
 script:
   - hexo clean 
   - hexo g 
-  - hexo d
 #  - gulp
 
 after_success:
@@ -42,7 +41,7 @@ after_success:
  # - for i in $(seq 1 $LAST_BUILD_NUMBER ); do  travis logs $i --delete --force ; done
 
 after_script:
- # - ./_travis.sh
+  - ./_travis.sh
 
 # E: Build LifeCycle
 
