@@ -30,7 +30,7 @@ before_script:
   - chmod +x _travis.sh
 
 script:
-  - hexo clean && hexo g
+  - hexo clean && hexo g -d
   - gulp
 
 after_success:
@@ -38,7 +38,7 @@ after_success:
  # - for i in $(seq 1 $LAST_BUILD_NUMBER ); do  travis logs $i --delete --force ; done
 
 after_script:
-  - ./_travis.sh
+ # - ./_travis.sh
 
 # E: Build LifeCycle
 
