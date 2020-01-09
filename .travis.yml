@@ -31,7 +31,8 @@ before_script:
 
 script:
   - hexo clean 
-  - hexo g -d
+  - hexo g 
+  - hexo d
 #  - gulp
 
 after_success:
