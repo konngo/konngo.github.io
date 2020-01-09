@@ -3,6 +3,7 @@ date: '2019-06-11 16:35:53'
 updated: '2019-08-07 14:25:44'
 tags: [子系统]
 permalink: 1560242153673.html
+excerpt: linux子系统
 ---
 ### 安装
 

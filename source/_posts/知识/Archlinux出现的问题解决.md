@@ -3,6 +3,7 @@ date: '2019-06-11 16:03:51'
 updated: '2019-08-07 14:29:10'
 tags: [archlinux, linux]
 permalink: 1560240231478.html
+excerpt: archlinux
 ---
 # pacman更新时报错 signature is invalid
 

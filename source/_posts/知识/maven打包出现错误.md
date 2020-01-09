@@ -3,6 +3,7 @@ date: '2019-06-11 16:19:48'
 updated: '2019-08-07 14:27:47'
 tags: [maven, package]
 permalink: 1560241188256.html
+excerpt: maven打包出错
 ---
 ### 1.程序包com.sun.xml.internal.ws.spi不存在
 

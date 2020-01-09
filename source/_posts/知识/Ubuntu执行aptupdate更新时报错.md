@@ -3,6 +3,7 @@ date: '2019-06-11 16:27:34'
 updated: '2019-08-07 14:27:00'
 tags: [Ubuntu, linux]
 permalink: 1560241654637.html
+excerpt: ubuntu更新错误
 ---
 ```
 Could not get lock /var/lib/dpkg/lock - open (11: Resource temporarily unavailable)
