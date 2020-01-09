@@ -2,7 +2,7 @@ title: maven+tomcat 热部署
 date: '2019-06-11 16:18:19'
 updated: '2019-08-07 14:28:58'
 tags: [maven, tomcat, 热部署]
-permalink: /articles/2019/06/11/1560241099787.html
+permalink: 1560241099787.html
 ---
 ### 1.配置tomcat-users.xml
 

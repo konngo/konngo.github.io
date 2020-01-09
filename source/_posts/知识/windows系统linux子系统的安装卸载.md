@@ -2,7 +2,7 @@ title: windows系统linux子系统的安装卸载
 date: '2019-06-11 16:35:53'
 updated: '2019-08-07 14:25:44'
 tags: [子系统]
-permalink: /articles/2019/06/11/1560242153673.html
+permalink: 1560242153673.html
 ---
 ### 安装
 

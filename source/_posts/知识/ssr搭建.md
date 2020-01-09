@@ -2,7 +2,7 @@ title: ssr搭建
 date: '2019-07-01 14:02:52'
 updated: '2019-11-06 23:14:33'
 tags: [待分类]
-permalink: /articles/2019/07/01/1561960972309.html
+permalink: 1561960972309.html
 ---
 > 不要用于任何商业使用。
 

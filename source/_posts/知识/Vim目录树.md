@@ -2,7 +2,7 @@ title: Vim 目录树
 date: '2019-06-11 16:32:04'
 updated: '2019-08-07 14:25:01'
 tags: [vim]
-permalink: /articles/2019/06/11/1560241924626.html
+permalink: 1560241924626.html
 ---
 # 插件快捷键
 ### 【普通模式】

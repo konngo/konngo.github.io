@@ -2,7 +2,7 @@ title: mircoservices(微服务)
 date: '2019-06-11 16:24:48'
 updated: '2019-08-07 14:27:20'
 tags: [微服务]
-permalink: /articles/2019/06/11/1560241487915.html
+permalink: 1560241487915.html
 ---
 # what are mircoservices
 A microservice is an engineering approach focused on decomposing applications into single-function modules with well-defined interfaces which are independently deployed and operated by small teams who own the entire lifecycle of the service. Microservices accelerate delivery by minimizing communication and coordination between people while reducing the scope and risk of change. 

@@ -2,7 +2,7 @@ title: 'Enterprise Design Thinking '
 date: '2019-06-11 16:15:49'
 updated: '2019-08-07 14:28:18'
 tags: [design, thinking]
-permalink: /articles/2019/06/11/1560240949046.html
+permalink: 1560240949046.html
 ---
 ##  principles of ibm design thinking 
 

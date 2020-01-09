@@ -2,7 +2,7 @@ title: Ubuntu 执行 apt update 更新时报错
 date: '2019-06-11 16:27:34'
 updated: '2019-08-07 14:27:00'
 tags: [Ubuntu, linux]
-permalink: /articles/2019/06/11/1560241654637.html
+permalink: 1560241654637.html
 ---
 ```
 Could not get lock /var/lib/dpkg/lock - open (11: Resource temporarily unavailable)

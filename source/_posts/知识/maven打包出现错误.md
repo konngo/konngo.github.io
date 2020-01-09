@@ -2,7 +2,7 @@ title: maven打包出现错误
 date: '2019-06-11 16:19:48'
 updated: '2019-08-07 14:27:47'
 tags: [maven, package]
-permalink: /articles/2019/06/11/1560241188256.html
+permalink: 1560241188256.html
 ---
 ### 1.程序包com.sun.xml.internal.ws.spi不存在
 

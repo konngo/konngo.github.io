@@ -2,7 +2,7 @@ title: Windows系统快捷打开软件
 date: '2019-06-12 10:19:11'
 updated: '2019-08-07 14:18:50'
 tags: [bat, windows]
-permalink: /articles/2019/06/12/1560305951731.html
+permalink: 1560305951731.html
 ---
 > 达成效果：按win+1键打开命令行窗口。在命令行窗口内输入软件名称，成功打开软件。
 
