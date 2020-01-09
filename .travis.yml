@@ -28,6 +28,8 @@ before_script:
   - export TZ='Asia/Shanghai'
 #  - npm install -g gulp
   - chmod +x _travis.sh
+  - git config -–global user.name "pengljun"
+  - git config –-global user.email "pengljun@qq.com"
 
 script:
   - hexo clean 
