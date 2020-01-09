@@ -80,7 +80,7 @@ social:
     - rgba(25, 23, 23, .15)
 
 site_verification: # 向搜索引擎验证你对站点的所有权，用于向搜索引擎提交 sitemap 和管理站点被搜索引擎收录的情况。
-  google:T-cxEQ_zs27K1g3y9H3Rn0qDhu213NBgnb91LCJ4DX8
+  google:mmgtKt21Gs3HQnfrfhM-NguACVO62xxeeNy-oUz5a1s
   baidu:UyodE6J846
 
 analytics: # 统计系统，目前支持 Google analytics.js 统计、Google Tag Manager 统计、CNZZ 统计、腾讯统计、51.La统计、百度统计
