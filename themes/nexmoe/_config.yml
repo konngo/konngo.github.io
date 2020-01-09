@@ -51,7 +51,7 @@ menu:
     - /about.html
     - icon-info-circle
   我的朋友: 
-    - /PY.html
+    - /py.html
 
 widgets:
 - social
@@ -64,13 +64,18 @@ maxTagcloud: 0  # 0 表示不限制
 
 social:
   哔哩哔哩:
-    - https://space.bilibili.com/20238211
+    - https://space.bilibili.com/176583358
     - icon-bilibili
     - rgb(231, 106, 141)
     - rgba(231, 106, 141, .15)
   GitHub:
-    - https://github.com/nexmoe/
+    - https://github.com/konngo/
     - icon-github
+    - rgb(25, 23, 23)
+    - rgba(25, 23, 23, .15)
+  知乎:
+    - https://www.zhihu.com/people/peng-li-jun-85/activities
+    - icon-zhihu
     - rgb(25, 23, 23)
     - rgba(25, 23, 23, .15)
 
@@ -79,7 +84,7 @@ site_verification: # 向搜索引擎验证你对站点的所有权，用于向�
   baidu:
 
 analytics: # 统计系统，目前支持 Google analytics.js 统计、Google Tag Manager 统计、CNZZ 统计、腾讯统计、51.La统计、百度统计
-  google_site_id: #<ID>
+  google_site_id: UA-155900969-1
   gtags_site_id: #<ID>
   cnzz_site_id: #<ID>
   tencent_site_id: #<ID>
