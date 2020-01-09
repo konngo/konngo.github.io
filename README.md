@@ -5,7 +5,7 @@
 部署类型 | push | push | pull_request | api | cron
 启用Sudo | true | false | true
 仓库地址 | konngo/konngo.github.io | owner_name/repo_name
-提交分支 | c96c6843e1d97c7a3aa7974489f67aeba2a6a70b | hash 16位
+提交分支 | 5b87597580402e5ca551dd123b9d7715d1df94ce | hash 16位
 提交信息 | init |
-Job ID   | 634610604 |
-Job NUM  | 32.1 |
+Job ID   | 634611074 |
+Job NUM  | 33.1 |
