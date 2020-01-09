@@ -26,6 +26,9 @@ function default(){
 
   git checkout master
 
+  cd ..
+ 
+
   hexo g 
   gulp
 
@@ -42,6 +45,8 @@ cat <<EOF >> README.md
 Job ID   | $TRAVIS_JOB_ID |
 Job NUM  | $TRAVIS_JOB_NUMBER |
 EOF
+
+  cd public
   git init
   git config user.name "konngo"
   git config user.email "pengljun@qq.com"
