@@ -1,15 +1,15 @@
 <div class="nexmoe-post">
     <div class="nexmoe-post-cover"> 
         <% if (page.cover){ %>
-        <img src="<%- page.cover %>" style="height:957px;">
+        <img src="<%- page.cover %>" style="height:200px;">
         <%}  else{ %>
             <% if (theme.randback){ 
                 var num = Math.ceil(Math.random()*7); 
                 var url = theme.randombackground[num];
               %>
-              <img src="<%= url %>" style="height:957px;">
+              <img src="<%= url %>" style="height:200px;">
             <%}  else{ %>
-              <img src="<%= theme.background %>" style="height:957px;">
+              <img src="<%= theme.background %>" style="height:200px;">
             <% } %>
         <% } %>
         <h1><%= page.title %></h1>
