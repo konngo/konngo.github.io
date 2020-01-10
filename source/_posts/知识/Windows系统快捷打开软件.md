@@ -4,6 +4,7 @@ updated: '2019-08-07 14:18:50'
 tags: [bat, windows]
 permalink: 1560305951731.html
 excerpt: dos脚本
+categories: 编程
 ---
 > 达成效果：按win+1键打开命令行窗口。在命令行窗口内输入软件名称，成功打开软件。
 

@@ -4,6 +4,7 @@ updated: '2019-08-07 14:29:10'
 tags: [archlinux, linux]
 permalink: 1560240231478.html
 excerpt: archlinux
+categories: 编程
 ---
 # pacman更新时报错 signature is invalid
 

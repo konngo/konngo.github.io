@@ -4,6 +4,7 @@ updated: '2019-08-07 14:25:01'
 tags: [vim]
 permalink: 1560241924626.html
 excerpt: vim文件目录操作
+categories: 编程
 ---
 # 插件快捷键
 ### 【普通模式】

@@ -4,6 +4,7 @@ updated: '2019-08-07 14:27:00'
 tags: [Ubuntu, linux]
 permalink: 1560241654637.html
 excerpt: ubuntu更新错误
+categories: 编程
 ---
 ```
 Could not get lock /var/lib/dpkg/lock - open (11: Resource temporarily unavailable)

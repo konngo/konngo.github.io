@@ -4,6 +4,7 @@ updated: '2019-08-07 14:28:58'
 tags: [maven, tomcat, 热部署]
 permalink: 1560241099787.html
 excerpt: maven + tomcat热部署 （主要原因是idea社区版太难了）
+categories: 编程
 ---
 ### 1.配置tomcat-users.xml
 

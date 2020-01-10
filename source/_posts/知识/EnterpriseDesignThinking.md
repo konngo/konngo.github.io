@@ -4,6 +4,7 @@ updated: '2019-08-07 14:28:18'
 tags: [design, thinking]
 permalink: 1560240949046.html
 excerpt: IBM设计思维
+categories: 编程
 ---
 ##  principles of ibm design thinking 
 

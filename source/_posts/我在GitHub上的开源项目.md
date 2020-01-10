@@ -4,6 +4,7 @@ updated: '2019-10-11 18:03:52'
 tags: [开源, GitHub]
 permalink: /my-github-repos
 excerpt: 我在 GitHub 上的开源项目
+categories: 编程
 ---
 <!-- 该页面会被定时任务自动覆盖，所以请勿手工更新 -->
 <!-- 如果你有更漂亮的排版方式，请发 issue 告诉我们 -->
