@@ -4,15 +4,15 @@
         <a href="<%- url_for(page.path) %>">
             <div class="nexmoe-post-cover mdui-ripple"> 
                 <% if (page.cover){ %>
-                <img src="<%- page.cover %>" alt="<%= page.title %>">
+                <img src="<%- page.cover %>" alt="<%= page.title %>" style="height:957px;">
                 <%}  else{ %>
                     <% if (theme.randback){ 
                         var num = Math.ceil(Math.random()*2); 
                         var url = theme.randombackground[num];
                       %>
-                        <img src="<%= theme.background %>">
+                        <img src="<%= theme.background %>" style="height:957px;">
                     <%}  else{ %>
-                        <img src="<%= theme.background %>" alt="<%= page.title %>">
+                        <img src="<%= theme.background %>" alt="<%= page.title %>" style="height:957px;">
                     <% } %>
                 <% } %>
                 <h1><%= page.title %></h1>
