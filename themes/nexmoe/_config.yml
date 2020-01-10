@@ -66,10 +66,10 @@ menu:
 #    - /archives
 #    - icon-container
   关于博客:
-    - /about.html
+    - /about/index.html
     - icon-info-circle
   我的朋友: 
-    - /py.html
+    - /friends/index.html
 
 widgets:
 - social
