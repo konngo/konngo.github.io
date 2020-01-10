@@ -1,7 +1,8 @@
 avatar: /images/avatar.png # 网站 Logo
 background: https://i.loli.net/2020/01/09/l7G2LuKJYNDaAey.jpg # 既是博客的背景，又是文章默认头图
 # 开启随机文章默认头图
-randback : true
+# 1. 自定义图片链接模式
+randback : false
 randombackground :
   - https://i.loli.net/2020/01/10/9xvtETZ46KzMA8G.jpg
   - https://i.loli.net/2020/01/10/cUMluW6ObfXdSBq.jpg
@@ -11,6 +12,12 @@ randombackground :
   - https://i.loli.net/2020/01/10/jtqvx68SQVcaCbO.jpg
   - https://i.loli.net/2020/01/10/Q5iaFxrSzm4u9y2.jpg
   - https://i.loli.net/2020/01/10/KVEgqUa1cWI3Gns.jpg
+# 2.使用本地文件夹内图片模式
+randbacklocal : true
+# 本地图片库地址
+localimgdir : /randomimg/
+# 本地图片数量
+localnum : 111
 favicon:
   href: /favicon.ico # 网站图标
   type: image/png # 图标类型，可能的值有(image/png, image/vnd.microsoft.icon, image/x-icon, image/gif)

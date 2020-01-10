@@ -11,8 +11,13 @@
                         var url = theme.randombackground[num];
                       %>
                         <img src="<%= url %>" style="height:400px;">
-                    <%}  else{ %>
-                        <img src="<%= theme.background %>" alt="<%= page.title %>" style="height:400px;">
+                    <%}  else if(theme.randbacklocal){ 
+                        var num = Math.floor(Math.random()*theme.localnum);
+                        var url=theme.localimgdir+num+".jpg";
+                    %>
+                        <img src="<%= url %>" style="height:400px;">
+                    <% } else {%>
+                        <img src="<%= theme.background %>" style="height:400px;">
                     <% } %>
                 <% } %>
                 <h1><%= page.title %></h1>
