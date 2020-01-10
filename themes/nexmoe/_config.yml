@@ -3,9 +3,9 @@ background: https://i.loli.net/2020/01/09/l7G2LuKJYNDaAey.jpg # 既是博客的�
 # 开启随机文章默认头图
 randback : true
 randombackground :
-  0 : https://i.loli.net/2020/01/10/7ch3AKwX59kgaUm.png
-  1 : https://i.loli.net/2020/01/10/7ch3AKwX59kgaUm.png
-  2 : https://i.loli.net/2020/01/10/T5utpevlCgszanB.png
+  - https://i.loli.net/2020/01/10/7ch3AKwX59kgaUm.png
+  - https://i.loli.net/2020/01/10/7ch3AKwX59kgaUm.png
+  - https://i.loli.net/2020/01/10/T5utpevlCgszanB.png
 favicon:
   href: /favicon.ico # 网站图标
   type: image/png # 图标类型，可能的值有(image/png, image/vnd.microsoft.icon, image/x-icon, image/gif)
