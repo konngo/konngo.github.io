@@ -1,3 +1,6 @@
-# friends
+---
+title: friends
+date: 2020-01-10 16:26:54
+---
 
-欢迎申请友站
+hello friends
