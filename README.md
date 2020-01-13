@@ -5,7 +5,7 @@
 部署类型 | push | push | pull_request | api | cron
 启用Sudo | true | false | true
 仓库地址 | konngo/konngo.github.io | owner_name/repo_name
-提交分支 | cd744345515abf36288a108b4e55fec227e5c0bd | hash 16位
-提交信息 | init |
-Job ID   | 635162445 |
-Job NUM  | 65.1 |
+提交分支 | c426e2355dd23fea2c3594a2916b2dee2416026f | hash 16位
+提交信息 | Delete 顾城的诗顾城的句.md |
+Job ID   | 636196830 |
+Job NUM  | 66.1 |
